@@ -286,8 +286,8 @@ STILL EXECUTE IT?", L"J100758.264+211529.207", MB_YESNO | MB_ICONEXCLAMATION) ==
             HANDLE thread4 = CreateThread(0, 0, payload3, 0, 0, 0);
 			sound3();
 			Sleep(30000);
-			TerminateThread(thread3, 0);
-            CloseHandle(thread3);
+			TerminateThread(thread4, 0);
+            CloseHandle(thread4);
             InvalidateRect(0, 0, 0);
             Sleep(2000);
         	HANDLE thread5 = CreateThread(0, 0, textout, 0, 0, 0);
